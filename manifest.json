@@ -1,0 +1,17 @@
+{
+  "name": "คู่มือนักคอมฯ",
+  "short_name": "คู่มือนักคอมฯ",
+  "description": "คู่มือนักวิชาการคอมพิวเตอร์ ใช้อ่านออฟไลน์บนมือถือ",
+  "lang": "th",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f6f8",
+  "theme_color": "#0f766e",
+  "icons": [
+    { "src": "icon192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

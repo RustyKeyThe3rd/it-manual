@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>คู่มือนักคอมฯ</title>
+<meta name="description" content="คู่มือนักวิชาการคอมพิวเตอร์ ใช้อ่านออฟไลน์บนมือถือ">
+<meta name="theme-color" content="#0f766e">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icon192.png">
+<link rel="apple-touch-icon" href="icon192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="คู่มือนักคอมฯ">
+<link rel="stylesheet" href="style.css">
+<script>
+  // ใส่ธีมและขนาดตัวอักษรก่อนวาดหน้า กันจอวูบ
+  try {
+    var t = JSON.parse(localStorage.getItem('kmc:theme'));
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    var f = JSON.parse(localStorage.getItem('kmc:fs'));
+    if (f === 1 || f === 2) document.documentElement.setAttribute('data-fs', String(f));
+  } catch (e) {}
+</script>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-in">
+    <button id="btnBack" class="ib" type="button" aria-label="ย้อนกลับ" hidden>&larr;</button>
+    <div id="barTitle" class="bar-title">คู่มือนักคอมฯ</div>
+    <button id="btnFont" class="ib" type="button" aria-label="ขนาดตัวอักษร">ก</button>
+    <button id="btnTheme" class="ib" type="button" aria-label="โหมดสี">&#9680;</button>
+  </div>
+</header>
+
+<main id="app" class="wrap">
+  <noscript>แอปนี้ต้องเปิดใช้ JavaScript</noscript>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="contentnet.js"></script>
+<script src="contenthelpdesk.js"></script>
+<script src="contentbackup.js"></script>
+<script src="contentprocure.js"></script>
+<script src="contentsecurity.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
